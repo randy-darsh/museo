@@ -26,6 +26,5 @@ class Curator
   def add_photograph(photograph_hash)
     @photographs << photograph_hash
   end
-  binding.pry
 
 end
