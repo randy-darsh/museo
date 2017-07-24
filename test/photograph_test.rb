@@ -13,6 +13,10 @@ class PhotographTest < Minitest::Test
                                   year: 1954})
   end
 
+  def test_it_exists
+    assert_instance_of Photograph, @photograph
+  end
+
   def test_is_has_an_id
     assert_equal 1, @photograph.id
   end
