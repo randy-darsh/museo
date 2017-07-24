@@ -7,11 +7,11 @@ class Photograph
               :museum_id,
               :year
 
-  def initialize(photo_hash)
-    @id = photo_hash[:id]
-    @artist_id = photo_hash[:artist_id]
-    @museum_id = photo_hash[:museum_id]
-    @year = photo_hash[:year]
+  def initialize(photograph_hash)
+    @id = photograph_hash[:id]
+    @artist_id = photograph_hash[:artist_id]
+    @museum_id = photograph_hash[:museum_id]
+    @year = photograph_hash[:year]
   end
 
 end

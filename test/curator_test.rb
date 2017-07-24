@@ -35,4 +35,9 @@ class CuratorTest < Minitest::Test
     assert_equal 1, @curator.artists.count
   end
 
+  def test_it_can_add_a_photograph
+    @curator.add_photograph(Photograph.new({id: 1, name: "Moonrise, Hernandez", artist_id: 1, museum_id: 1, year: 1941}))
+    assert_equal 1, @curator.photographs.count
+  end
+
 end
